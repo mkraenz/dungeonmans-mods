@@ -1,0 +1,6 @@
+{
+  "tstt_academy": {
+    "class": "dmAcademyExtraData",
+    "extraactor_01": "@ref(tstt_npc_orkleader),armorer"
+  }
+}

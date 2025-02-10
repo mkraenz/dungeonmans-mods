@@ -1,0 +1,11 @@
+{
+  "tstt_npc_orkleader": {
+    "class": "dmTownsmans",
+    "name": "Lurtz, Cold-Blooded Leader of the Uruk-Hai",
+    "bBlockSameArchetype": false,
+    "bBlockTileEntry": true,
+    "dialog_onBumped": "@ref(tstt_dialog_orkleader_default)",
+    "health": 9999,
+    "sprite": "@ref(tstt_sprite_orkleader)"
+  }
+}

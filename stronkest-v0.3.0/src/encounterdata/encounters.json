@@ -1,0 +1,6 @@
+{
+  "tstt_enc_orkleader": {
+    "class": "dmEncounterData",
+    "@ref(tstt_mon_orkleader)": 1
+  }
+}

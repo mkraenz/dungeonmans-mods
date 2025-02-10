@@ -1,0 +1,5 @@
+entityDef "tstt_enc_orkleader"
+{
+    class "dmEncounterData"
+    tstt_mon_orkleader 1
+}

@@ -1,0 +1,5 @@
+entityDef "tstt_table_orkleader"
+{
+    addtotable_01 "encounter_list_scrobold_03"
+    tstt_enc_orkleader 10
+}

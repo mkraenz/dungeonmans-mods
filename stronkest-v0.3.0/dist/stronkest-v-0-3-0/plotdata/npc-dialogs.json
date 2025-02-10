@@ -1,0 +1,14 @@
+{
+  "tstt_dialog_orkleader_default": {
+    "classType": "dmDialogData",
+    "instigatorSprite": "tstt_sprite_orkleader",
+    "message": "Me Stronkest Fiter here. Me CRUSH all laik coboltz.",
+    "responses": [
+      {
+        "message": "I respect that. You are stronker.",
+        "responseScript": "none"
+      }
+    ],
+    "title": "Lurtz, Cold-Blooded Leader of the Uruk-Hai"
+  }
+}

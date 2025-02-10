@@ -1,0 +1,101 @@
+{
+  "tstt_plot_stronkest": {
+    "classType": "dmPlotThread",
+    "plotStateLookup": {
+      "unstarted": 0,
+      "quest_accepted": 100,
+      "duell_won": 200,
+      "completed": 300
+    },
+    "dialogHooks": [
+      {
+        "targetArc": "@ref(tstt_npc_orkleader)",
+        "stateEquals": "unstarted",
+        "dialogOptions": [
+          {
+            "message": "I bet my axe I am stronker than you.",
+            "responseScript": "@ref(tstt_ps_stronkest_unstarted)"
+          }
+        ]
+      },
+      {
+        "targetArc": "@ref(tstt_npc_orkleader)",
+        "stateEquals": "quest_accepted",
+        "dialogOptions": [
+          {
+            "message": "Where are we supposed to meet again?",
+            "responseDialog": "@ref(tstt_dialog_quest_accepted)"
+          }
+        ]
+      },
+      {
+        "targetArc": "@ref(tstt_npc_orkleader)",
+        "stateEquals": "duell_won",
+        "dialogOptions": [
+          {
+            "message": "ME ARE STRONKER.",
+            "responseScript": "@ref(tstt_ps_stronkest_duell_won)"
+          }
+        ]
+      }
+    ],
+    "dropItemHooks": [
+      {
+        "dropArchetype": "@ref(tstt_item_pruuf_of_stronkestnis)",
+        "dropChance": 1,
+        "stateEquals": "quest_accepted",
+        "targetMonsterArchetypes": ["@ref(tstt_mon_orkleader)"]
+      }
+    ]
+  },
+  "tstt_ps_stronkest_unstarted": {
+    "classType": "dmPlotScript",
+    "setThisState": "quest_accepted",
+    "dialogArchetype": "@ref(tstt_dialog_stronkest_unstarted)"
+  },
+  "tstt_dialog_stronkest_unstarted": {
+    "classType": "dmDialogData",
+    "instigatorSprite": "@ref(tstt_sprite_orkleader)",
+    "message": "HAHAHA. You stronk! But me stronkest! Come meat at buddum of pit of meagr ent wiek coboltz. We fite.",
+    "title": "Quest accepted: Ze Stronkest",
+    "responses": [
+      {
+        "message": "I shall crush you together with those meager and weak scrobolds at the bottom floor of the Scrobold Warden.",
+        "responseScript": "none"
+      }
+    ]
+  },
+  "tstt_ps_stronkest_duell_won": {
+    "classType": "dmPlotScript",
+    "removeItems": { "@ref(tstt_item_pruuf_of_stronkestnis)": 1 },
+    "setThisState": "completed",
+    "tossItems": {
+      "@ref(tstt_item_axe_ze_stronkest)": 1
+    },
+    "dialogArchetype": "@ref(tstt_dialog_stronkest_duell_won)"
+  },
+  "tstt_dialog_stronkest_duell_won": {
+    "classType": "dmDialogData",
+    "instigatorSprite": "@ref(tstt_sprite_orkleader)",
+    "title": "Quest completed: Ze Stronkest",
+    "message": "You stronk! Me subdue! My Axe is yours.",
+    "responses": [
+      {
+        "message": "ME ARE STRONKEST!",
+        "responseScript": "none"
+      }
+    ]
+  },
+  "tstt_dialog_quest_accepted": {
+    "classType": "dmDialogData",
+    "instigatorSprite": "@ref(tstt_sprite_orkleader)",
+    "message": "Come meat at buddum of pit of meagr ent wiek coboltz. We fite.",
+    "responses": [
+      {
+        "message": "Right, right. Scrobold Warden. Bottom floor. I knew that.",
+        "responseScript": "none"
+      }
+    ],
+    "title": "Lurtz, Cold-Blooded Leader of the Uruk-Hai"
+  }
+}

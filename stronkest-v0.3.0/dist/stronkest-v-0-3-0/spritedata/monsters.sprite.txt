@@ -1,0 +1,8 @@
+entityDef "tstt_sprite_orkleader"
+{
+    height 128
+    texturename "tstt_tex_orkleader"
+    width 80
+    xloc 0
+    yloc 0
+}

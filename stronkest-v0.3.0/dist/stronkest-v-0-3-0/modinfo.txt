@@ -1,0 +1,5 @@
+stronkest-v0.3.0
+mod subheading
+
+This is named v0.3.0 because i am building the mod with @dungeonmans-mod-tools/cli@0.3.0 
+https://www.npmjs.com/package/@dungeonmans-mod-tools/cli

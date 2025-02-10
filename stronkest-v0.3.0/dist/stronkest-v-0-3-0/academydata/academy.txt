@@ -1,0 +1,5 @@
+entityDef "tstt_academy"
+{
+    class "dmAcademyExtraData"
+    extraactor_01 "tstt_npc_orkleader,armorer"
+}

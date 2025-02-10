@@ -1,0 +1,30 @@
+{
+  "tstt_item_pruuf_of_stronkestnis": {
+    "class": "dmNonAcademyTurnIn",
+    "sprite": "@ref(tstt_sprite_pruuf_of_stronkestnis)",
+    "stackable": false,
+    "identified": true,
+    "name": "Pruuf Of Stronkestnis",
+    "value": 1,
+    "plotthread_advance": "@ref(tstt_plot_stronkest),duell_won",
+    "description": "Zis pruufs zet yu ar ze stronkest in ze worlt.",
+    "flavorText": "Obtained in a duell with Lurtz, Cold-Blooded Leader of the Uruk-Hai, this medal symbolizes strength and courage to every ork."
+  },
+  "tstt_item_axe_ze_stronkest": {
+    "class": "dmWeapon",
+    "attackparticle": "particle_attack_weapon_slash",
+    "damage": "12d2+8",
+    "flavorText": "Lurtz, Cold-Blooded Leader of the Uruk-Hai, received this axe by killing the former tribal chief Boldog, The Stronk. Where Lurtz' former weapon resides is unknown.",
+    "hands": 2,
+    "identified": true,
+    "info1": "2h",
+    "info2": "axe",
+    "name": "Ze Stronkest",
+    "range": 1,
+    "tier": 4,
+    "sprite": "@ref(tstt_sprite_axe_ze_stronkest)",
+    "unidName": "Ze Stronkest",
+    "uniqueitem": true,
+    "value": 15000
+  }
+}
