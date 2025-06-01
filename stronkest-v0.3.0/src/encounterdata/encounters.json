@@ -2,5 +2,71 @@
   "tstt_enc_orkleader": {
     "class": "dmEncounterData",
     "@ref(tstt_mon_orkleader)": 1
+  },
+  "tstt_enc_goblin_very_light_patrol": {
+    "class": "dmEncounterData",
+    "@ref(tstt_mon_goblin_spearman)": 2
+  },
+  "tstt_enc_goblin_spearman_one": {
+    "class": "dmEncounterData",
+    "@ref(tstt_mon_goblin_spearman)": 1
+  },
+  "tstt_enc_goblin_rouser_one": {
+    "class": "dmEncounterData",
+    "@ref(tstt_mon_goblin_rouser)": 1
+  },
+  "tstt_enc_goblin_impaler_one": {
+    "class": "dmEncounterData",
+    "@ref(tstt_mon_goblin_impaler)": 1
+  },
+  "tstt_enc_goblin_light_patrol": {
+    "class": "dmEncounterData",
+    "@ref(tstt_mon_goblin_spearman)": "2d2",
+    "@ref(tstt_mon_goblin_rouser)": 1
+  },
+  "tstt_enc_goblin_heavy_patrol": {
+    "class": "dmEncounterData",
+    "@ref(tstt_mon_goblin_spearman)": "1d3+2",
+    "@ref(tstt_mon_goblin_rouser)": "1d2+1",
+    "@ref(tstt_mon_goblin_impaler)": 1
+  },
+
+  "tstt_enc_goblin_direwolf_one": {
+    "class": "dmEncounterData",
+    "@ref(tstt_mon_goblin_direwolf)": 1
+  },
+  "tstt_enc_goblin_direwolf_pair": {
+    "class": "dmEncounterData",
+    "@ref(tstt_mon_goblin_direwolf)": 2
+  },
+  "tstt_enc_goblin_wolf_one": {
+    "class": "dmEncounterData",
+    "@ref(tstt_mon_goblin_wolf_rider)": 1
+  },
+  "tstt_enc_goblin_wolf_pair": {
+    "class": "dmEncounterData",
+    "@ref(tstt_mon_goblin_wolf_rider)": 2
+  },
+  "tstt_enc_goblin_pillager_one": {
+    "class": "dmEncounterData",
+    "@ref(tstt_mon_goblin_pillager)": 1
+  },
+  "tstt_enc_goblin_pillager_pair": {
+    "class": "dmEncounterData",
+    "@ref(tstt_mon_goblin_pillager)": 2
+  },
+  "tstt_enc_goblin_wolf_escorte": {
+    "class": "dmEncounterData",
+    "@ref(tstt_mon_goblin_pillager)": 2,
+    "@ref(tstt_mon_goblin_spearman)": 2
+  },
+  "tstt_enc_goblin_knight_and_riders": {
+    "class": "dmEncounterData",
+    "@ref(tstt_mon_goblin_wolf_rider)": 1,
+    "@ref(tstt_mon_goblin_knight)": 1
+  },
+  "tstt_enc_goblin_knight_one": {
+    "class": "dmEncounterData",
+    "@ref(tstt_mon_goblin_knight)": 1
   }
 }

@@ -1,6 +1,45 @@
 {
-  "tstt_table_orkleader": {
+  "tstt_table_scroboldcave1_adds": {
+    "addtotable_01": "encounter_list_scrobold_01",
+    "@ref(tstt_enc_goblin_very_light_patrol)": 200,
+    "@ref(tstt_enc_goblin_rouser_one)": 200,
+    "@ref(tstt_enc_goblin_spearman_one)": 200,
+    "@ref(tstt_enc_goblin_impaler_one)": 200,
+    "@ref(tstt_enc_goblin_light_patrol)": 100,
+    "@ref(tstt_enc_goblin_wolf_one)": 40
+  },
+  "tstt_table_scroboldcave2_adds": {
+    "addtotable_01": "encounter_list_scrobold_02",
+    "@ref(tstt_enc_goblin_direwolf_one)": 40,
+    "@ref(tstt_enc_goblin_wolf_one)": 200,
+    "@ref(tstt_enc_goblin_wolf_pair)": 200,
+    "@ref(tstt_enc_goblin_pillager_one)": 200,
+    "@ref(tstt_enc_goblin_pillager_pair)": 200,
+    "@ref(tstt_enc_goblin_wolf_escorte)": 100,
+    "@ref(tstt_enc_goblin_knight_and_riders)": 100,
+    "@ref(tstt_enc_goblin_knight_one)": 100,
+    "@ref(tstt_enc_goblin_very_light_patrol)": 200,
+    "@ref(tstt_enc_goblin_rouser_one)": 200,
+    "@ref(tstt_enc_goblin_spearman_one)": 200,
+    "@ref(tstt_enc_goblin_impaler_one)": 200,
+    "@ref(tstt_enc_goblin_light_patrol)": 200
+  },
+  "tstt_table_scroboldcave3_adds": {
     "addtotable_01": "encounter_list_scrobold_03",
-    "@ref(tstt_enc_orkleader)": 10
+    "@ref(tstt_enc_goblin_direwolf_one)": 100,
+    "@ref(tstt_enc_goblin_wolf_one)": 200,
+    "@ref(tstt_enc_goblin_wolf_pair)": 200,
+    "@ref(tstt_enc_goblin_pillager_one)": 200,
+    "@ref(tstt_enc_goblin_pillager_pair)": 200,
+    "@ref(tstt_enc_goblin_wolf_escorte)": 100,
+    "@ref(tstt_enc_goblin_knight_and_riders)": 100,
+    "@ref(tstt_enc_goblin_knight_one)": 100,
+    "@ref(tstt_enc_goblin_very_light_patrol)": 200,
+    "@ref(tstt_enc_goblin_rouser_one)": 200,
+    "@ref(tstt_enc_goblin_spearman_one)": 200,
+    "@ref(tstt_enc_goblin_impaler_one)": 200,
+    "@ref(tstt_enc_goblin_light_patrol)": 200,
+    "@ref(tstt_enc_goblin_direwolf_pair)": 80,
+    "@ref(tstt_enc_orkleader)": 50
   }
 }
