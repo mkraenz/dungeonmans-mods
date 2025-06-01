@@ -68,5 +68,9 @@
   "tstt_enc_goblin_knight_one": {
     "class": "dmEncounterData",
     "@ref(tstt_mon_goblin_knight)": 1
+  },
+  "tstt_enc_great_troll": {
+    "class": "dmEncounterData",
+    "@ref(tstt_mon_great_troll)": 1
   }
 }

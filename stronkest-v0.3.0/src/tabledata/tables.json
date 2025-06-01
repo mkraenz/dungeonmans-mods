@@ -40,6 +40,7 @@
     "@ref(tstt_enc_goblin_impaler_one)": 200,
     "@ref(tstt_enc_goblin_light_patrol)": 200,
     "@ref(tstt_enc_goblin_direwolf_pair)": 80,
-    "@ref(tstt_enc_orkleader)": 50
+    "@ref(tstt_enc_orkleader)": 50,
+    "@ref(tstt_enc_great_troll)": 70
   }
 }

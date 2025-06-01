@@ -164,5 +164,32 @@
     "ragevalue": 30,
     "hitBonus": 20,
     "base_defeatarmor": 2
+  },
+  "tstt_mon_great_troll": {
+    "class": "dmMonster",
+    "bBlockTileEntry": true,
+    "basicattackparticle": "particle_blunt_impact",
+    "attack_sfx": "weapon_1h_blunt_hit",
+    "banter": "creature",
+    "cointype": "copper_coins_small",
+    "hasRanged": false,
+    "knowledge": "greater_beasts",
+    "nametable": "orc_name_chart",
+    "name": "They have a Cave Troll",
+    "sprite": "@ref(tstt_sprite_great_troll)",
+    "health": 50,
+    "meleedamage_01": "melee,2d2,0",
+    "meleedamage_02": "melee,1d8+1,0",
+    "meleedamage_03": "melee,2d1+1,0",
+    "level": 5,
+    "scale_min": 4,
+    "armor": 4,
+    "parry": 1,
+    "block": 5,
+    "dodge": 1,
+    "ragevalue": 80,
+    "power_01": "sp_gigaslam",
+    "hitBonus": 30,
+    "base_defeatarmor": 5
   }
 }
