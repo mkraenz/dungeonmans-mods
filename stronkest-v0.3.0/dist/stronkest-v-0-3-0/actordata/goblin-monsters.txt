@@ -145,7 +145,7 @@ entityDef "tstt_mon_goblin_pillager"
     rangedAttackRange 3
     rangedattackrecharge "1d2+1"
     tooclosedistance 1
-    rangeDamage_01 "ranged,1d5,0"
+    rangedDamage_01 "ranged,1d5,0"
 }
 
 entityDef "tstt_mon_goblin_wolf_rider"
