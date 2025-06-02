@@ -8,5 +8,17 @@
     "texturename": "tstt_tex_weapons",
     "xloc": 0,
     "yloc": 64
+  },
+  "tstt_sprite_wolf_head": {
+    "// TODO": "placeholder image",
+    "texturename": "tstt_tex_weapons",
+    "xloc": 64,
+    "yloc": 0
+  },
+  "tstt_sprite_troll_head": {
+    "// TODO": "placeholder image",
+    "texturename": "tstt_tex_weapons",
+    "xloc": 128,
+    "yloc": 0
   }
 }

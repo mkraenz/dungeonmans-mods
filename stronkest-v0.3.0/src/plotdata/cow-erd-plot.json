@@ -1,0 +1,182 @@
+{
+  "tstt_plot_cow_erd": {
+    "classType": "dmPlotThread",
+    "plotStateLookup": {
+      "unstarted": 0,
+      "quest_1_accepted": 100,
+      "quest_1_pending": 200,
+      "quest_1_completed": 300,
+      "quest_2_accepted": 400,
+      "quest_2_pending": 500,
+      "quest_2_completed": 600
+    },
+    "dialogHooks": [
+      {
+        "targetArc": "@ref(tstt_npc_training_mans)",
+        "stateEquals": "unstarted",
+        "dialogOptions": [
+          {
+            "message": "I could clear out the cave for you.",
+            "responseScript": "@ref(tstt_ps_cow_erd_unstarted)"
+          }
+        ]
+      },
+      {
+        "targetArc": "@ref(tstt_npc_training_mans)",
+        "stateEquals": "quest_1_accepted",
+        "dialogOptions": [
+          {
+            "message": "(listen)",
+            "responseDialog": "@ref(tstt_dialog_cow_erd_quest_1_accepted)"
+          }
+        ]
+      },
+      {
+        "targetArc": "@ref(tstt_npc_training_mans)",
+        "stateEquals": "quest_1_pending",
+        "dialogOptions": [
+          {
+            "message": "Here's the wolf's head you were asking for. Feel more courageous already?",
+            "responseScript": "@ref(tstt_ps_cow_erd_quest1_pending)"
+          }
+        ]
+      },
+      {
+        "targetArc": "@ref(tstt_npc_training_mans)",
+        "stateEquals": "quest_2_accepted",
+        "dialogOptions": [
+          {
+            "message": "(listen)",
+            "responseDialog": "@ref(tstt_dialog_cow_erd_quest_2_accepted_repeat)"
+          }
+        ]
+      },
+      {
+        "targetArc": "@ref(tstt_npc_training_mans)",
+        "stateEquals": "quest_2_pending",
+        "dialogOptions": [
+          {
+            "message": "The good news is I got your troll head. The bad news is, we're out of Troll-Behind Shrooms again.",
+            "responseScript": "@ref(tstt_ps_cow_erd_quest2_pending)"
+          }
+        ]
+      }
+    ],
+    "dropItemHooks": [
+      {
+        "// TODO": "unfortunately, there does not seem to be a way to require collecting at least 5 items of that kind. Instead it switches to next state as soon as the item drops",
+        "dropArchetype": "@ref(tstt_item_cow_erd_wolf_head)",
+        "dropChance": 0.5,
+        "stateEquals": "quest_1_accepted",
+        "targetMonsterArchetypes": [
+          "@ref(tstt_mon_goblin_direwolf)",
+          "@ref(tstt_mon_goblin_knight)",
+          "@ref(tstt_mon_goblin_pillager)",
+          "@ref(tstt_mon_goblin_wolf_rider)"
+        ]
+      },
+      {
+        "dropArchetype": "@ref(tstt_item_cow_erd_troll_head)",
+        "dropChance": 1,
+        "stateEquals": "quest_2_accepted",
+        "targetMonsterArchetypes": ["@ref(tstt_mon_great_troll)"]
+      }
+    ]
+  },
+  "tstt_ps_cow_erd_unstarted": {
+    "classType": "dmPlotScript",
+    "setThisState": "quest_1_accepted",
+    "dialogArchetype": "@ref(tstt_dialog_cow_erd_unstarted)"
+  },
+  "tstt_dialog_cow_erd_unstarted": {
+    "classType": "dmDialogData",
+    "instigatorSprite": "@ref(tstt_sprite_training_mans)",
+    "message": "Really!? You would do that for me? Then... let's see... bring me the head of a wolf. I've heard Goblins use them as mounts. Seeing you defeat one of those beasts will make me feel much more secure entering myself.",
+    "title": "Quest accepted: The Courage of a Lion - Chapter 1",
+    "responses": [
+      {
+        "message": "Back in a minute",
+        "responseScript": "none"
+      }
+    ]
+  },
+  "tstt_dialog_cow_erd_quest_1_accepted": {
+    "classType": "dmDialogData",
+    "instigatorSprite": "@ref(tstt_sprite_training_mans)",
+    "message": "(to himself) Asking him for a wolf head from the Scrobold Warrens... Maybe that was a bit too much. What if something happens to him because of my request.",
+    "responses": [
+      {
+        "message": "(leave)",
+        "responseScript": "none"
+      }
+    ]
+  },
+  "tstt_ps_cow_erd_quest1_pending": {
+    "classType": "dmPlotScript",
+    "removeItems": { "@ref(tstt_item_cow_erd_wolf_head)": 1 },
+    "setThisState": "quest_1_completed",
+    "dialogArchetype": "@ref(tstt_dialog_cow_erd_quest_1_pending)"
+  },
+  "tstt_dialog_cow_erd_quest_1_pending": {
+    "classType": "dmDialogData",
+    "instigatorSprite": "@ref(tstt_sprite_training_mans)",
+    "title": "Quest completed: The Courage of a Lion - Chapter 1",
+    "message": "Wow, you actually did it. Unfortunately, I've heard that in the deepest depth of the cave the Goblins have a Cave Troll. With that thing around, I will certainly not start my Dungeonmans career anytime soon.",
+    "responses": [
+      {
+        "message": "Alright, I'll get you a troll head...",
+        "responseScript": "@ref(tstt_ps_cow_erd_quest_2_accepted)"
+      }
+    ]
+  },
+  "tstt_ps_cow_erd_quest_2_accepted": {
+    "classType": "dmPlotScript",
+    "setThisState": "quest_2_accepted",
+    "dialogArchetype": "@ref(tstt_dialog_cow_erd_quest_2_accepted)"
+  },
+  "tstt_dialog_cow_erd_quest_2_accepted": {
+    "classType": "dmDialogData",
+    "instigatorSprite": "@ref(tstt_sprite_training_mans)",
+    "title": "Quest accepted: The Courage of a Lion - Chapter 2",
+    "message": "What!? You think you can take on a troll by yourself? Are you serious? You don't have to go that far for me.",
+    "responses": [
+      {
+        "message": "Don't worry about it. I've got you covered.",
+        "responseScript": "none"
+      },
+      {
+        "message": "I'll bring you that troll. Maybe also some Troll-Behind Shrooms. Heard those are delicious with some Gelatenous Cube Jelly.",
+        "responseScript": "none"
+      }
+    ]
+  },
+  "tstt_dialog_cow_erd_quest_2_accepted_repeat": {
+    "classType": "dmDialogData",
+    "instigatorSprite": "@ref(tstt_sprite_training_mans)",
+    "message": "(to himself) I hope he'll be alright. Killing a troll deep in the Scrobold Warrens all by his lonesome... What is this mans thinking.",
+    "responses": [
+      {
+        "message": "(leave)",
+        "responseScript": "none"
+      }
+    ]
+  },
+  "tstt_ps_cow_erd_quest2_pending": {
+    "classType": "dmPlotScript",
+    "removeItems": { "@ref(tstt_item_cow_erd_troll_head)": 1 },
+    "setThisState": "quest_2_completed",
+    "dialogArchetype": "@ref(tstt_dialog_cow_erd_quest_2_pending)"
+  },
+  "tstt_dialog_cow_erd_quest_2_pending": {
+    "classType": "dmDialogData",
+    "instigatorSprite": "@ref(tstt_sprite_training_mans)",
+    "title": "Quest completed: The Courage of a Lion - Chapter 2",
+    "message": "Unbelievable. Thank you so much! That means I can now start my Dungeonmans adventure for real. Like real real. Right?",
+    "responses": [
+      {
+        "message": "For real real, yeah. Good luck out there! See you around.",
+        "responseScript": "none"
+      }
+    ]
+  }
+}

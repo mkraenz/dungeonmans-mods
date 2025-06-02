@@ -7,5 +7,14 @@
     "dialog_onBumped": "@ref(tstt_dialog_orkleader_default)",
     "health": 9999,
     "sprite": "@ref(tstt_sprite_orkleader)"
+  },
+  "tstt_npc_training_mans": {
+    "class": "dmTownsmans",
+    "name": "Cow Erd",
+    "bBlockSameArchetype": false,
+    "bBlockTileEntry": true,
+    "dialog_onBumped": "@ref(tstt_dialog_training_mans_default)",
+    "health": 9999,
+    "sprite": "@ref(tstt_sprite_training_mans)"
   }
 }

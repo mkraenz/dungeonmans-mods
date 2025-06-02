@@ -1,0 +1,8 @@
+entityDef "tstt_sprite_training_mans"
+{
+    height 128
+    width 80
+    xloc 0
+    yloc 0
+    texturename "tstt_tex_ruffian_wesnoth"
+}

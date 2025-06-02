@@ -10,5 +10,16 @@
       }
     ],
     "title": "Lurtz, Cold-Blooded Leader of the Uruk-Hai"
+  },
+  "tstt_dialog_training_mans_default": {
+    "classType": "dmDialogData",
+    "instigatorSprite": "tstt_sprite_training_mans",
+    "message": "A horde of Goblins and their filthy companions have taken over the Scrobold Warren nearby. It became a lot more difficult for a Freshmans like myself. You better be careful.",
+    "responses": [
+      {
+        "message": "You too, mans.",
+        "responseScript": "none"
+      }
+    ]
   }
 }

@@ -8,3 +8,14 @@ entityDef "tstt_npc_orkleader"
     health 9999
     sprite "tstt_sprite_orkleader"
 }
+
+entityDef "tstt_npc_training_mans"
+{
+    class "dmTownsmans"
+    name "Cow Erd"
+    bBlockSameArchetype false
+    bBlockTileEntry true
+    dialog_onBumped "tstt_dialog_training_mans_default"
+    health 9999
+    sprite "tstt_sprite_training_mans"
+}

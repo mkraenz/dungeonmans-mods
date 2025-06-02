@@ -29,3 +29,29 @@ entityDef "tstt_item_axe_ze_stronkest"
     uniqueitem true
     value 15000
 }
+
+entityDef "tstt_item_cow_erd_wolf_head"
+{
+    class "dmNonAcademyTurnIn"
+    sprite "tstt_sprite_wolf_head"
+    stackable true
+    identified true
+    name "Head of a Wolf"
+    value 1
+    plotthread_advance "tstt_plot_cow_erd,quest_1_pending"
+    description "Uncomfortable to move around with but you find it awkwardly fashionable."
+    flavorText "The habit of carrying cut off heads dangling on ones waste was common among Dungeonmans during the time when Great Granduncle of the current Headmaster was leading the Academy. Nowadays it has been out of fashion due to being too 'grotesque'. Then again, fashion runs in circles..."
+}
+
+entityDef "tstt_item_cow_erd_troll_head"
+{
+    class "dmNonAcademyTurnIn"
+    sprite "tstt_sprite_troll_head"
+    stackable true
+    identified true
+    name "Head of a Troll"
+    value 1
+    plotthread_advance "tstt_plot_cow_erd,quest_2_pending"
+    description "Unfortunately, Troll-Behind Shrooms don't grow on troll heads. Who cares about hygiene anyway."
+    flavorText "As the 2nd leader of the Academy, the Headmasters' Great Granduncle was under great pressure by The Coven to deliver even more results than the First Headmaster."
+}
