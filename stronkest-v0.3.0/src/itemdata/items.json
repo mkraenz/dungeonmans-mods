@@ -48,5 +48,18 @@
     "plotthread_advance": "@ref(tstt_plot_cow_erd),quest_2_pending",
     "description": "Unfortunately, Troll-Behind Shrooms don't grow on troll heads. Who cares about hygiene anyway.",
     "flavorText": "As the 2nd leader of the Academy, the Headmasters' Great Granduncle was under great pressure by The Coven to deliver even more results than the First Headmaster."
+  },
+  "tstt_item_test_power": {
+    "class": "dmConsumable",
+    "sprite": "@ref(tstt_sprite_troll_head)",
+    "identified": true,
+    "name": "TEST_ITEM_WITH_POWER",
+    "itemtype": "scroll",
+    "uses": 10000,
+    "value": 1,
+    "power_1": "@ref(tstt_sp_purify_gear)",
+    "description": "Unfortunately, Troll-Behind Shrooms don't grow on troll heads. Who cares about hygiene anyway.",
+    "flavorText": "As the 2nd leader of the Academy, the Headmasters' Great Granduncle was under great pressure by The Coven to deliver even more results than the First Headmaster.",
+    "itemrank": 5
   }
 }

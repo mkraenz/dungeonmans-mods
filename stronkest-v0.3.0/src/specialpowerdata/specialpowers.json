@@ -1,0 +1,21 @@
+{
+  "tstt_sp_wolf_fury": {
+    "class": "dmSpecialPower",
+    "powername": "Wolf Fury",
+    "castingstring": "^3[attacker]^7 bites ^5[victim]^7",
+    "selectrange": 1,
+    "script": "tstt_stronkest.SpTestAmazing",
+    "hitmod": -0.2,
+    "damagemod": -0.7,
+    "cooldown": 2
+  },
+  "tstt_sp_purify_gear": {
+    "class": "dmSpecialPower",
+    "powername": "Purify Gear",
+    "menudescription": "Select a piece of gear to purify. Will remove all prefixes and curses.",
+    "script": "tstt_stronkest.spitemtest",
+    "usedonitem": true,
+    "targetitemtype": "dmEquippable",
+    "effectinfo": "Select a piece of gear to purify. Will remove ^oall^7 prefixes and curses."
+  }
+}
