@@ -14,7 +14,6 @@ entityDef "tstt_sprite_pruuf_of_stronkestnis"
 
 entityDef "tstt_sprite_wolf_head"
 {
-    "// TODO" "placeholder image"
     texturename "tstt_tex_weapons"
     xloc 64
     yloc 0
@@ -22,7 +21,6 @@ entityDef "tstt_sprite_wolf_head"
 
 entityDef "tstt_sprite_troll_head"
 {
-    "// TODO" "placeholder image"
     texturename "tstt_tex_weapons"
     xloc 128
     yloc 0
