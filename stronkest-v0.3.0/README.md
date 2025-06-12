@@ -23,7 +23,7 @@ Once you want to test your mod in the game, you build your mod into formats that
 rm -r dist
 
 # build the mod
-npx @dungeonmans-mod-tools/cli build src dist/tstt_stronkest
+npx @dungeonmans-mod-tools/cli@latest build src dist/tstt_stronkest
 ```
 
 > Details: `.txt`, `.png`, and `.cs` files will be copied over as-is. `.json` files will be turned into entitydefs inside `.txt` files. Notable exceptions being JSON files in `plotdata/` and `overworldgenerationdata/` which are written to JSON because Dungeonmans supports JSON natively in these two cases.
