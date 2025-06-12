@@ -1,0 +1,10 @@
+{
+    "tstt_set_farmermans": {
+        "setname": "Farmermans' Friends",
+        "set": "tstt_set_farmermans",
+        "desc_1": "TODO describe benefit when wearing 1 piece of the set",
+        "pieces": 5,
+        "// TODO": "create an effect for this set",
+        "effect_1": "t5_light_3p_bonus"
+    }
+}

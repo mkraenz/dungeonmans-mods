@@ -1,0 +1,32 @@
+{
+  "tstt_sprite_cowboyhat": {
+    "texturename": "tstt_tex_items_farmermans",
+    "xloc": 0,
+    "yloc": 0
+  },
+  "tstt_sprite_longsleaveshirt": {
+    "texturename": "tstt_tex_items_farmermans",
+    "xloc": 64,
+    "yloc": 0
+  },
+  "tstt_sprite_shortsleaveshirt": {
+    "texturename": "tstt_tex_items_farmermans",
+    "xloc": 128,
+    "yloc": 0
+  },
+  "tstt_sprite_wellies": {
+    "texturename": "tstt_tex_items_farmermans",
+    "xloc": 192,
+    "yloc": 0
+  },
+  "tstt_sprite_barefoot": {
+    "texturename": "tstt_tex_items_farmermans",
+    "xloc": 256,
+    "yloc": 0
+  },
+  "tstt_sprite_dungarees": {
+    "texturename": "tstt_tex_items_farmermans",
+    "xloc": 320,
+    "yloc": 0
+  }
+}

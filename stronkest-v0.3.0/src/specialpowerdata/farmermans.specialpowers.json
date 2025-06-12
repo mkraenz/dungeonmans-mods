@@ -1,0 +1,20 @@
+{
+  "tstt_sp_farmermans_friends_1": {
+    "class": "dmSpecialPower",
+    "powername": "Summon Farmermans' Friends I",
+    "menudescription": "TODO Summon your farm animals to your side to help you in battle. They will attack your enemies and provide support.",
+    "icon": "@ref(tstt_sprite_perk_farmermans_1)"
+  },
+  "tstt_sp_farmermans_friends_2": {
+    "class": "dmSpecialPower",
+    "powername": "Summon Farmermans' Friends II",
+    "menudescription": "TODO Summon your farm animals to your side to help you in battle. They will attack your enemies and provide support.",
+    "icon": "@ref(tstt_sprite_perk_farmermans_2)"
+  },
+  "tstt_sp_farmermans_friends_3": {
+    "class": "dmSpecialPower",
+    "powername": "Summon Farmermans' Friends III",
+    "menudescription": "TODO Summon your farm animals to your side to help you in battle. They will attack your enemies and provide support.",
+    "icon": "@ref(tstt_sprite_perk_farmermans_3)"
+  }
+}

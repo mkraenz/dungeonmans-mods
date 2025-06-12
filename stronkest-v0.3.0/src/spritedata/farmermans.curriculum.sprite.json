@@ -1,0 +1,39 @@
+{
+  "tstt_sprite_perk_farmermans_1": {
+    "texturename": "tstt_tex_icons_farmermans",
+    "xloc": 0,
+    "yloc": 0,
+    "width": 48,
+    "height": 48
+  },
+  "tstt_sprite_perk_farmermans_2": {
+    "texturename": "tstt_tex_icons_farmermans",
+    "xloc": 0,
+    "yloc": 0,
+    "// TODO": "update xloc and yloc for each sprite",
+    "width": 48,
+    "height": 48
+  },
+  "tstt_sprite_perk_farmermans_3": {
+    "texturename": "tstt_tex_icons_farmermans",
+    "xloc": 0,
+    "yloc": 0,
+    "// TODO": "update xloc and yloc for each sprite",
+    "width": 48,
+    "height": 48
+  },
+  "tstt_sprite_mastery_button_farmermans": {
+    "texturename": "tstt_tex_mastery_button_farmermans",
+    "xloc": 0,
+    "yloc": 0,
+    "width": 100,
+    "height": 70
+  },
+  "tstt_sprite_ui_mastery_banner_farmermans": {
+    "texturename": "tstt_tex_ui_mastery_banner_farmermans",
+    "xloc": 0,
+    "yloc": 0,
+    "width": 256,
+    "height": 512
+  }
+}

@@ -1,0 +1,60 @@
+entityDef "tstt_perk_farmermans_1"
+{
+    class "dmPerk"
+    name "Summon Farmermans' Friends I"
+    description "Summon your farm animals to your side to help you in battle. They will attack your enemies and provide support."
+    flavor "Farmermans' friends are always ready to lend a hoof or a paw in times of need."
+    grantedpower "tstt_sp_farmermans_friends_1"
+    power_1 "tstt_sp_farmermans_friends_1"
+    icon "tstt_sprite_perk_farmermans_1"
+}
+
+entityDef "tstt_perk_farmermans_2"
+{
+    class "dmPerk"
+    name "Summon Farmermans' Friends II"
+    description "Tier 2 Test TODO"
+    flavor "Farmermans' friends are always ready to lend a hoof or a paw in times of need."
+    grantedpower "tstt_sp_farmermans_friends_2"
+    power_1 "tstt_sp_farmermans_friends_2"
+    icon "tstt_sprite_perk_farmermans_2"
+}
+
+entityDef "tstt_perk_farmermans_3"
+{
+    class "dmPerk"
+    name "Summon Farmermans' Friends III"
+    description "Tier 3 Test TODO"
+    flavor "Farmermans' friends are always ready to lend a hoof or a paw in times of need."
+    grantedpower "tstt_sp_farmermans_friends_3"
+    power_1 "tstt_sp_farmermans_friends_3"
+    icon "tstt_sprite_perk_farmermans_3"
+}
+
+entityDef "tstt_mastery_farmermans"
+{
+    class "dmMastery"
+    masteryName "Farmermans' Friends"
+    masteryDescription "Do great and powerful things via the might of Farmermans' Friends!"
+    maxperks 3
+    perk1 "tstt_perk_farmermans_1"
+    perk2 "tstt_perk_farmermans_2"
+    perk3 "tstt_perk_farmermans_3"
+}
+
+entityDef "tstt_syllabus_farmermans"
+{
+    class "dmSyllabus"
+    button "tstt_sprite_mastery_button_farmermans"
+    background "tstt_sprite_ui_mastery_banner_farmermans"
+    category "tstt_syllabus_farmermans"
+    title "Farmermans"
+    mastery_01 "tstt_mastery_farmermans"
+}
+
+entityDef "tstt_curriculum_farmermans"
+{
+    class "dmCurriculum"
+    modify true
+    add_01 "tstt_syllabus_farmermans"
+}

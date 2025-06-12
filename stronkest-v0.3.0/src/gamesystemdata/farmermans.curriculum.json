@@ -1,0 +1,51 @@
+{
+    "tstt_perk_farmermans_1": {
+        "class": "dmPerk",
+        "name": "Summon Farmermans' Friends I",
+        "description": "Summon your farm animals to your side to help you in battle. They will attack your enemies and provide support.",
+        "flavor": "Farmermans' friends are always ready to lend a hoof or a paw in times of need.",
+        "grantedpower": "@ref(tstt_sp_farmermans_friends_1)",
+        "power_1": "@ref(tstt_sp_farmermans_friends_1)",
+        "icon": "@ref(tstt_sprite_perk_farmermans_1)"
+    },
+    "tstt_perk_farmermans_2": {
+        "class": "dmPerk",
+        "name": "Summon Farmermans' Friends II",
+        "description": "Tier 2 Test TODO",
+        "flavor": "Farmermans' friends are always ready to lend a hoof or a paw in times of need.",
+        "grantedpower": "@ref(tstt_sp_farmermans_friends_2)",
+        "power_1": "@ref(tstt_sp_farmermans_friends_2)",
+        "icon": "@ref(tstt_sprite_perk_farmermans_2)"
+    },
+    "tstt_perk_farmermans_3": {
+        "class": "dmPerk",
+        "name": "Summon Farmermans' Friends III",
+        "description": "Tier 3 Test TODO",
+        "flavor": "Farmermans' friends are always ready to lend a hoof or a paw in times of need.",
+        "grantedpower": "@ref(tstt_sp_farmermans_friends_3)",
+        "power_1": "@ref(tstt_sp_farmermans_friends_3)",
+        "icon": "@ref(tstt_sprite_perk_farmermans_3)"
+    },
+    "tstt_mastery_farmermans": {
+        "class": "dmMastery",
+        "masteryName": "Farmermans' Friends",
+        "masteryDescription": "Do great and powerful things via the might of Farmermans' Friends!",
+        "maxperks": 3,
+        "perk1": "@ref(tstt_perk_farmermans_1)",
+        "perk2": "@ref(tstt_perk_farmermans_2)",
+        "perk3": "@ref(tstt_perk_farmermans_3)"
+    },
+    "tstt_syllabus_farmermans": {
+        "class": "dmSyllabus",
+        "button": "@ref(tstt_sprite_mastery_button_farmermans)",
+        "background": "@ref(tstt_sprite_ui_mastery_banner_farmermans)",
+        "category": "tstt_syllabus_farmermans",
+        "title": "Farmermans",
+        "mastery_01": "@ref(tstt_mastery_farmermans)"
+    },
+    "tstt_curriculum_farmermans": {
+        "class": "dmCurriculum",
+        "modify": true,
+        "add_01": "@ref(tstt_syllabus_farmermans)"
+    }
+}

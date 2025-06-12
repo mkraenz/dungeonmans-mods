@@ -1,0 +1,88 @@
+entityDef "tstt_item_cowboyhat"
+{
+    class "dmHelm"
+    sprite "tstt_sprite_cowboyhat"
+    flavorText "A classic piece of headwear for any farmer and rancher."
+    identified false
+    name "Cowboy Hat"
+    value 1000000
+    healthbonus 0.08
+    info1 "helm"
+    tier 1
+    itemset "tstt_set_farmermans"
+}
+
+entityDef "tstt_item_longsleaveshirt"
+{
+    class "dmArmor"
+    sprite "tstt_sprite_longsleaveshirt"
+    flavorText "A long-sleeved shirt that provides decent protection while allowing for freedom of movement."
+    identified false
+    name "Long Sleeve Shirt"
+    value 800000
+    armorvalue 30
+    dodgevalue 25
+    info1 "mediumarmor"
+    tier 2
+    itemset "tstt_set_farmermans"
+}
+
+entityDef "tstt_item_shortsleaveshirt"
+{
+    class "dmArmor"
+    sprite "tstt_sprite_shortsleaveshirt"
+    flavorText "A short-sleeved shirt that is comfortable and practical for warm weather."
+    identified false
+    name "Short Sleeve Shirt"
+    value 600000
+    armorvalue 20
+    dodgevalue 15
+    info1 "mediumarmor"
+    tier 1
+    itemset "tstt_set_farmermans"
+}
+
+entityDef "tstt_item_wellies"
+{
+    class "dmBoots"
+    sprite "tstt_sprite_wellies"
+    flavorText "Sturdy boots that keep your feet dry and protected in muddy fields."
+    identified false
+    name "Wellies"
+    value 200000
+    armorvalue 15
+    dodgevalue 10
+    tier 2
+    itemset "tstt_set_farmermans"
+    info1 "mediumarmor"
+}
+
+entityDef "tstt_item_barefoot"
+{
+    class "dmBoots"
+    sprite "tstt_sprite_barefoot"
+    flavorText "Sometimes the best footwear is no footwear at all."
+    identified false
+    name "Barefoot"
+    value 0
+    armorvalue 0
+    dodgevalue 40
+    tier 1
+    itemset "tstt_set_farmermans"
+    info1 "mediumarmor"
+}
+
+entityDef "tstt_item_dungarees"
+{
+    class "dmPants"
+    sprite "tstt_sprite_dungarees"
+    flavorText "Durable and practical pants that are perfect for working in the fields."
+    identified false
+    name "Dungarees"
+    value 500000
+    armorvalue 40
+    dodgevalue 10
+    tier 1
+    itemset "tstt_set_farmermans"
+    info1 "mediumarmor"
+}

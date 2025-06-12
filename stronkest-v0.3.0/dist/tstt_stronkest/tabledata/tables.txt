@@ -1,6 +1,6 @@
 entityDef "tstt_table_scroboldcave1_adds"
 {
-    addtotable_01 "encounter_list_scrobold_01"
+    replacetable_01 "encounter_list_scrobold_01"
     tstt_enc_goblin_very_light_patrol 200
     tstt_enc_goblin_rouser_one 200
     tstt_enc_goblin_spearman_one 200
@@ -11,7 +11,7 @@ entityDef "tstt_table_scroboldcave1_adds"
 
 entityDef "tstt_table_scroboldcave2_adds"
 {
-    addtotable_01 "encounter_list_scrobold_02"
+    replacetable_01 "encounter_list_scrobold_02"
     tstt_enc_goblin_direwolf_one 40
     tstt_enc_goblin_wolf_one 200
     tstt_enc_goblin_wolf_pair 200
@@ -29,7 +29,7 @@ entityDef "tstt_table_scroboldcave2_adds"
 
 entityDef "tstt_table_scroboldcave3_adds"
 {
-    addtotable_01 "encounter_list_scrobold_03"
+    replacetable_01 "encounter_list_scrobold_03"
     tstt_enc_goblin_direwolf_one 100
     tstt_enc_goblin_wolf_one 200
     tstt_enc_goblin_wolf_pair 200
